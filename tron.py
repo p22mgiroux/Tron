@@ -90,68 +90,10 @@ def down2():
             d2[0] = 1
             twoby.left(90)
 
-def kill_toby(px, py):
-    demo1.penup()
-    demo2.penup()
-    demo3.penup()
-    demo4.penup()
-    demo5.penup()
-    demo6.penup()
-    demo7.penup()
-    demo8.penup()
-
-    demo1.speed(0)
-    demo2.speed(0)
-    demo3.speed(0)
-    demo4.speed(0)
-    demo5.speed(0)
-    demo6.speed(0)
-    demo7.speed(0)
-    demo8.speed(0)
-
-    demo1.goto(px + 5,py)
-    demo2.goto(px + 3.54,py + 3.54)
-    demo3.goto(px,py - 5)
-    demo4.goto(px + 3.54,py - 3.54)
-    demo5.goto(px - 5,py)
-    demo6.goto(px - 3.54,py - 3.54)
-    demo7.goto(px,py - 5)
-    demo8.goto(px - 3.54,py + 3.54)
-
-    demo1.speed(5)
-    demo2.speed(5)
-    demo3.speed(5)
-    demo4.speed(5)
-    demo5.speed(5)
-    demo6.speed(5)
-    demo7.speed(5)
-    demo8.speed(5)
-
-    demo1.pendown()
-    demo2.pendown()
-    demo3.pendown()
-    demo4.pendown()
-    demo5.pendown()
-    demo6.pendown()
-    demo7.pendown()
-    demo8.pendown()
-
-    demo1.forward(10)
-    demo1.forward(10)
-    demo1.forward(10)
-
 
 window = turtle.Screen()
-window.setup(800,800)
+window.setup(850,850)
 window.bgcolor("#202020")
-demo1 = turtle.Turtle()
-demo2 = turtle.Turtle()
-demo3 = turtle.Turtle()
-demo4 = turtle.Turtle()
-demo5 = turtle.Turtle()
-demo6 = turtle.Turtle()
-demo7 = turtle.Turtle()
-demo8 = turtle.Turtle()
 twoby = turtle.Turtle()
 toby = turtle.Turtle()
 turtle.register_shape("tron", ((-50,0),(-48,10),(-46,10),(-44,11),(-25,11),(-23,10),(-15,9),(-12,6),(-11,7),(-11,4),(-8,4),(-6,3),(-5,1),(-5,-1),(-6,-3),(-8,-4),(-11,-4),(-11,-7),(-11,-4),(-15,-3),(-17,-2),(-18,0),(-17,2),(-15,3),(-11,4),(-11,7),(-13,11),(-23,15),(-26,14),(-26,11),(-30,11),(-30,13),(-31,13),(-31,11),(-34,11),(-34,12),(-33,12),(-33,14),(-30,14),(-31,16),(-28,21),(-26,21),(-23,19),(-11,16),(-7,13),(-4,9),(1,9),(3,8),(4,7),(4,6),(6,6),(5,12),(5,14),(6,16),(8,17),(10,17),(22,16),(23,17),(24,17),(25,18),(26,18),(26,19),(28,19),(28,11),(25,11),(23,10),(21,11),(19,10),(17,11),(12,11),(19,8),(20,10),(23,10),(25,11),(44,11),(46,10),(48,10),(50,0),(48,-10),(46,-10),(44,-11),(25,-11),(23,-10),(20,-10),(19,-8),(12,-11),(17,-11),(19,-10),(21,-11),(23,-10),(25,-11),(28,-11),(28,-19),(26,-19),(26,-18),(25,-18),(24,-17),(23,-17),(22,-16),(10,-17),(8,-17),(6,-16),(5,-14),(5,-12),(6,-6),(4,-6),(4,-7),(3,-8),(1,-9),(-4,-9),(-7,-13),(-11,-16),(-23,-19),(-26,-21),(-28,-21),(-31,-16),(-30,-14),(-33,-14),(-33,-12),(-34,-12),(-34,-11),(-31,-11),(-31,-13),(-30,-13),(-30,-11),(-26,-11),(-26,-14),(-23,-15),(-13,-11),(-11,-7),(-12,-6),(-15,-9),(-23,-10),(-25,-11),(-44,-11),(-46,-10),(-48,-10),(-50,0)))
@@ -205,16 +147,16 @@ while moving:
     if (round(twoby.xcor()), round(twoby.ycor())) in passed_coords:
         twoby.hideturtle()
         moving = False 
-    if round(toby.xcor()) <= -400 or round(toby.xcor()) >= 400:
+    if round(toby.xcor()) <= -410 or round(toby.xcor()) >= 410:
         toby.hideturtle()
         moving = False
-    if round(toby.ycor()) <= -400 or round(toby.ycor()) >= 400:
+    if round(toby.ycor()) <= -410 or round(toby.ycor()) >= 410:
         toby.hideturtle()
         moving = False
-    if round(twoby.xcor()) <= -400 or round(twoby.xcor()) >= 400:
+    if round(twoby.xcor()) <= -410 or round(twoby.xcor()) >= 410:
         twoby.hideturtle()
         moving = False
-    if round(twoby.ycor()) <= -400 or round(twoby.ycor()) >= 400:
+    if round(twoby.ycor()) <= -410 or round(twoby.ycor()) >= 410:
         twoby.hideturtle()
         moving = False
     if (round(toby.xcor()), round(toby.ycor())) == (round(twoby.xcor()), round(twoby.ycor())):
